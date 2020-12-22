@@ -1,0 +1,10 @@
+.index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.todo-wrapper {
+    width: 451px;
+}

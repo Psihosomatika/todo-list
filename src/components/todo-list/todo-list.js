@@ -1,6 +1,6 @@
 import React from 'react';
 
-import TodoListItem from './todo-list-item';
+import TodoListItem from '../todo-list-item';
 import './todo-list.css';
 // в TodoListItem заменила label = {item.label} important={item.important} 
 //при помощи спред оператора {...item } передает все свойиства нужного компонента. 

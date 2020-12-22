@@ -7,7 +7,8 @@ import './todo-list-item.css';
 const TodoListItem = ({label, important = false }) => {
 
     const style = {
-        color: important ? 'tomato' : 'black'
+        color: important ? 'steelblue' : 'black',
+        fontWeight: important ? 'bold' : 'normal'
     };
     return (
         <span className="todo-list-item">
@@ -16,16 +17,18 @@ const TodoListItem = ({label, important = false }) => {
                 style={style}>
                 { label }
             </span>
+            <div className="todo-list-item-wrapper">
+                
+                <button type="button"
+                        className="btn btn-outline-success btn-sm float-right">
+                    <i className="fa fa-exclamation" />
+                </button>
 
-            <button type="button"
-                    className="btn btn-outline-success btn-sm">
-                <i className="fa fa-exclamation" />
-            </button>
-
-            <button type="button"
-                    className="btn btn-outline-success btn-sm">
-                <i className="fa fa-trash-o" />
-            </button>
+                <button type="button"
+                        className="btn btn-outline-danger btn-sm float-right">
+                    <i className="fa fa-trash-o" />
+                </button>
+            </div>
         </span>
     );
 
